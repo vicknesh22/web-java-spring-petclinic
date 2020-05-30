@@ -5,7 +5,7 @@ pipeline {
       image 'maven:3-alpine'
       label 'docker-agent'
       registryUrl 'https://hub.docker.com/'
-      registryCredentialId 'dock'
+      registryCredentialsId 'dock'
     }
   }
   stage ('hello') {
