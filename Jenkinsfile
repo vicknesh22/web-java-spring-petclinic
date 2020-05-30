@@ -8,9 +8,11 @@ pipeline {
       registryCredentialsId 'dock'
     }
   }
-  stage ('hello') {
-    step {
-      sh echo 'hellow'
+  stages {
+    stage ('init') {
+      steps {
+        sh 'echo "hellow"'
+      }
     }
   }
 }
